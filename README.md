@@ -1,2 +1,2 @@
 # Tela-para-add-tarefas
-Uma tela com estilização simples para adicionar tarefas e remove-las usando Java Script 
+Uma tela com estilização simples para gerenciamento de itens no caso, tarefas.
