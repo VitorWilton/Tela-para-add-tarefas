@@ -1,42 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #331F19;
-}
+    background: linear-gradient(135deg, #e8f0e8, #cdd5cd);
+
+    color: #F4F0EA;
 
 .container {
     text-align: center;
-    background-color: #CBBBA7;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(203, 187, 167, 0.95);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
     width: 90%;
     max-width: 600px;
-    border: 2px solid #8B7D70;
+    border: 1px solid #a08c7c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     color: #331F19;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 p {
-    color: #331F19;
+    color: #5E463A;
     font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
+
 .botao-verde {
-    background-color: #196f03;
-    color: #F4F0EA;
-    padding: 10px 20px;
+    background: linear-gradient(to right, #3CA55C, #B5AC49);
+    color: #fff;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-top: 10px;
 }
 
@@ -49,7 +61,7 @@ p {
     color: #F4F0EA;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
@@ -67,12 +79,14 @@ ul {
 }
 
 ul li {
+    position: relative;
     background-color: #F4F0EA;
     color: #331F19;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 12px 20px 12px 70px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
 }
 
 /* Estilo para o campo de entrada */
@@ -113,13 +127,13 @@ ul li {
     width: 25px;
     height: 25px;
     border: none;
-    background-color: #60041A;
+    background: linear-gradient(to right, #C0392B, #E74C3C);
     color: #F4F0EA;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     padding: 0;
 }
 
@@ -136,13 +150,13 @@ ul li {
     width: 25px;
     height: 25px;
     border: none;
-    background-color: #022dbd;
+    background: linear-gradient(to right, #2980B9, #3498DB);
     color: #F4F0EA;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     padding: 0;
 }
 
